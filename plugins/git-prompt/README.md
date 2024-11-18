@@ -23,13 +23,13 @@ This plugin uses `python3`, so your host needs to have it installed.
 
 The prompt may look like the following:
 
-- `(ryzsh↑3|✚1)`: on branch `ryzsh`, ahead of remote by 3 commits, 1 file changed but not staged
+- `(RyZsh↑3|✚1)`: on branch `RyZsh`, ahead of remote by 3 commits, 1 file changed but not staged
 - `(status|●2)`: on branch `status`, 2 files staged
-- `(ryzsh|✚7…)`: on branch `ryzsh`, 7 files changed, some files untracked
-- `(ryzsh|✖2✚3)`: on branch `ryzsh`, 2 conflicts, 3 files changed
+- `(RyZsh|✚7…)`: on branch `RyZsh`, 7 files changed, some files untracked
+- `(RyZsh|✖2✚3)`: on branch `RyZsh`, 2 conflicts, 3 files changed
 - `(experimental↓2↑3|✔)`: on branch `experimental`; your branch has diverged by 3 commits, remote by 2 commits; the repository is otherwise clean
 - `(:70c2952|✔)`: not on any branch; parent commit has hash `70c2952`; the repository is otherwise clean
-- `(ryzsh|⚑2)`: on branch `ryzsh`, there are 2 stashed changes
+- `(RyZsh|⚑2)`: on branch `RyZsh`, there are 2 stashed changes
 
 ## Prompt Structure
 

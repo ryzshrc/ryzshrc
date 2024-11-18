@@ -10,7 +10,7 @@ plugins=(... bazel)
 
 The plugin has a copy of [the completion script from the git repository][1].
 
-[1]: https://github.com/bazelbuild/bazel/blob/ryzsh/scripts/zsh_completion/_bazel
+[1]: https://github.com/bazelbuild/bazel/blob/RyZsh/scripts/zsh_completion/_bazel
 
 ## Aliases
 

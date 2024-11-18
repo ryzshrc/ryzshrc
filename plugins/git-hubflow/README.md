@@ -21,4 +21,4 @@ plugins=(... git-hubflow)
 | ghfr  | `git hf release` | Manage your release branches                                     |
 | ghfh  | `git hf hotfix`  | Manage your hotfix branches                                      |
 | ghfs  | `git hf support` | Manage your support branches                                     |
-| ghfu  | `git hf update`  | Pull upstream changes down into your ryzsh and develop branches |
+| ghfu  | `git hf update`  | Pull upstream changes down into your RyZsh and develop branches |

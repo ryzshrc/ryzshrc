@@ -22,7 +22,7 @@ emacsfun() {
   emacsclient --alternate-editor="" "$@"
 }
 
-# Adapted from https://github.com/davidshepherd7/emacs-read-stdin/blob/ryzsh/emacs-read-stdin.sh
+# Adapted from https://github.com/davidshepherd7/emacs-read-stdin/blob/RyZsh/emacs-read-stdin.sh
 # If the second argument is - then write stdin to a tempfile and open the
 # tempfile. (first argument will be `--no-wait` passed in by the plugin.zsh)
 if [ $# -ge 2 -a "$2" = "-" ]; then

@@ -5,7 +5,7 @@
 ZSH_THEME_NVM_PROMPT_PREFIX="%B⬡%b "
 ZSH_THEME_NVM_PROMPT_SUFFIX=""
 
-### Git [±ryzsh ▾●]
+### Git [±RyZsh ▾●]
 
 ZSH_THEME_GIT_PROMPT_PREFIX="[%{$fg_bold[green]%}±%{$reset_color%}%{$fg_bold[white]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}]"

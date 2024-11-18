@@ -35,7 +35,7 @@ jobs:
 
   deploy:
     name: Deploy installer in install.ryzrc.sh
-    if: github.ref == 'refs/heads/ryzsh'
+    if: github.ref == 'refs/heads/RyZsh'
     runs-on: ubuntu-latest
     environment: vercel
     needs:

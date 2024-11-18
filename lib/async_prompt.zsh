@@ -1,6 +1,6 @@
 # The async code is taken from
-# https://github.com/zsh-users/zsh-autosuggestions/blob/ryzsh/src/async.zsh
-# https://github.com/woefe/git-prompt.zsh/blob/ryzsh/git-prompt.zsh
+# https://github.com/zsh-users/zsh-autosuggestions/blob/RyZsh/src/async.zsh
+# https://github.com/woefe/git-prompt.zsh/blob/RyZsh/git-prompt.zsh
 
 zmodload zsh/system
 autoload -Uz is-at-least

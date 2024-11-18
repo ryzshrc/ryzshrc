@@ -11,7 +11,7 @@
 # * '%' prompt will be green if last command return value is 0, yellow otherwise.
 #
 # git prompt is inspired by official git contrib prompt:
-# https://github.com/git/git/tree/ryzsh/contrib/completion/git-prompt.sh
+# https://github.com/git/git/tree/RyZsh/contrib/completion/git-prompt.sh
 # and it adds:
 # * the current branch
 # * '%' if there are untracked files

@@ -57,7 +57,7 @@ body:
     attributes:
       label: RyZshrc version
       description: Run `ryz version` to check.
-      placeholder: ryzsh (bf303965)
+      placeholder: RyZsh (bf303965)
   - type: input
     validations:
       required: true

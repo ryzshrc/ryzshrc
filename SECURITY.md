@@ -8,7 +8,7 @@ to minimize the time between vulnerability publication and patch release.
 
 | Version        | Supported          |
 |:-------------- |:------------------ |
-| ryzsh         | :white_check_mark: |
+| RyZsh         | :white_check_mark: |
 | other commits  | :x:                |
 
 In the near future we will introduce versioning, so expect this section to change.

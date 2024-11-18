@@ -9,7 +9,7 @@ plugins=(... docker)
 ```
 
 A copy of the completion script from the docker/cli git repo:
-https://github.com/docker/cli/blob/ryzsh/contrib/completion/zsh/_docker
+https://github.com/docker/cli/blob/RyZsh/contrib/completion/zsh/_docker
 
 ## Settings
 

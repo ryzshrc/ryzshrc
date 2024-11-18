@@ -8,8 +8,8 @@ _1st_arguments=(
     "apply-http-lb-changes:applies load balancer configuration changes to the load balancer"
     "backup-domain:performs a backup on the domain"
     "change-admin-password:changes the administrator password"
-    "change-ryzsh-broker:changes the ryzsh broker in a Message Queue cluster providing JMS services for a GlassFish Server cluster."
-    "change-ryzsh-password:changes the ryzsh password"
+    "change-RyZsh-broker:changes the RyZsh broker in a Message Queue cluster providing JMS services for a GlassFish Server cluster."
+    "change-RyZsh-password:changes the RyZsh password"
     "collect-log-files:creates a ZIP archive of all available log files"
     "configure-jms-cluster:configures the Message Queue cluster providing JMS services to a GlassFish Server cluster"
     "configure-lb-weight:sets load balancing weights for clustered instances"
@@ -294,11 +294,11 @@ case "$words[1]" in
     change-admin-password)
         _command_args=('--domain_name+:' '--domaindir+:')
         ;;
-    change-ryzsh-broker)
+    change-RyZsh-broker)
         _command_args=('--host+:' '--port+:')
         ;;
-    change-ryzsh-password)
-        _command_args=('--domaindir+:' '--nodedir+:' '--saveryzshpassword+:saveryzshpassword:(true false)')
+    change-RyZsh-password)
+        _command_args=('--domaindir+:' '--nodedir+:' '--saveRyZshpassword+:saveRyZshpassword:(true false)')
         ;;
     collect-log-files)
         _command_args=('--host+:' '--port+:' '--retrieve+:retrieve:(true false)' '--target+:')
@@ -343,7 +343,7 @@ case "$words[1]" in
         _command_args=('--description+:' '--enabled+:enabled:(true false)' '--factoryclass+:' '--host+:' '--port+:' '--property+:' '--restype+:' '--target+:target:_asadmin_targets_cluster_das_domain_standalone_instance')
         ;;
     create-domain)
-        _command_args=('--adminport+:' '--checkports+:checkports:(true false)' '--domaindir+:' '--domainproperties+:' '--instanceport+:' '--keytooloptions+:' '--nopassword+:nopassword:(true false)' '--portbase+:' '--profile+:' '--savelogin+:savelogin:(true false)' '--saveryzshpassword+:saveryzshpassword:(true false)' '--template+:' '--useryzshpassword+:useryzshpassword:(true false)')
+        _command_args=('--adminport+:' '--checkports+:checkports:(true false)' '--domaindir+:' '--domainproperties+:' '--instanceport+:' '--keytooloptions+:' '--nopassword+:nopassword:(true false)' '--portbase+:' '--profile+:' '--savelogin+:savelogin:(true false)' '--saveRyZshpassword+:saveRyZshpassword:(true false)' '--template+:' '--useRyZshpassword+:useRyZshpassword:(true false)')
         ;;
     create-file-user)
         _command_args=('--authrealmname+:' '--groups+:' '--host+:' '--port+:' '--target+:target:_asadmin_targets_cluster_config_das_standalone_instance' '--userpassword+:')
@@ -403,7 +403,7 @@ case "$words[1]" in
         _command_args=('--classname+:' '--classpath+:' '--description+:' '--enabled+:enabled:(true false)' '--failurefatal+:failurefatal:(true false)' '--host+:' '--loadorder+:' '--port+:' '--property+:' '--target+:target:_asadmin_targets_cluster_das_domain_standalone_instance')
         ;;
     create-local-instance)
-        _command_args=('--checkports+:checkports:(true false)' '--cluster+:cluster:_asadmin_clusters' '--config+:' '--lbenabled+:lbenabled:(true false)' '--node+:node:_asadmin_nodes' '--nodedir+:' '--portbase+:' '--saveryzshpassword+:saveryzshpassword:(true false)' '--systemproperties+:' '--useryzshpassword+:useryzshpassword:(true false)')
+        _command_args=('--checkports+:checkports:(true false)' '--cluster+:cluster:_asadmin_clusters' '--config+:' '--lbenabled+:lbenabled:(true false)' '--node+:node:_asadmin_nodes' '--nodedir+:' '--portbase+:' '--saveRyZshpassword+:saveRyZshpassword:(true false)' '--systemproperties+:' '--useRyZshpassword+:useRyZshpassword:(true false)')
         ;;
     create-message-security-provider)
         _command_args=('--classname+:' '--host+:' '--isdefaultprovider+:isdefaultprovider:(true false)' '--layer+:layer:(SOAP HttpServlet)' '--port+:' '--property+:' '--providertype+:providertype:(client server client-server)' '--requestauthrecipient+:' '--requestauthsource+:' '--responseauthrecipient+:' '--responseauthsource+:' '--target+:target:_asadmin_targets_cluster_config_das_standalone_instance')

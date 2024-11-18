@@ -526,7 +526,7 @@ Usage: ${(j: :)${(s.::.)0#_}} <command> [options]
 Available commands:
 
   clean                       Delete all PR branches (ryzshrc/pull-*)
-  test <PR_number_or_URL>     Fetch PR #NUMBER and rebase against ryzsh
+  test <PR_number_or_URL>     Fetch PR #NUMBER and rebase against RyZsh
 
 EOF
     return 1
@@ -588,7 +588,7 @@ function _ryz::pr::test {
   }
 
 
-  # Fetch PR onto ryzshrc/pull-<PR_NUMBER> branch and rebase against ryzsh
+  # Fetch PR onto ryzshrc/pull-<PR_NUMBER> branch and rebase against RyZsh
   # If any of these operations fail, undo the changes made
   (
     set -e
@@ -614,7 +614,7 @@ function _ryz::pr::test {
       return 1
     }
 
-    # Rebase pull request branch against the current ryzsh
+    # Rebase pull request branch against the current RyZsh
     _ryz::log info "rebasing PR #$1..."
     local ret gpgsign
     {
@@ -625,9 +625,9 @@ function _ryz::pr::test {
       [[ $ret -ne 129 ]] || gpgsign=$(command git config commit.gpgsign 2>/dev/null)
       command git config commit.gpgsign false
 
-      command git rebase ryzsh ryzshrc/pull-$1 || {
+      command git rebase RyZsh ryzshrc/pull-$1 || {
         command git rebase --abort &>/dev/null
-        _ryz::log warn "could not rebase PR #$1 on top of ryzsh."
+        _ryz::log warn "could not rebase PR #$1 on top of RyZsh."
         _ryz::log warn "you might not see the latest stable changes."
         _ryz::log info "run \`zsh\` to test the changes."
         return 1

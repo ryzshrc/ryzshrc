@@ -11,7 +11,7 @@ designed to make the web faster, safer, and more open.
 
 ### License
 
-See: https://github.com/hellounicorn/zsh-ipfs/blob/ryzsh/LICENSE
+See: https://github.com/hellounicorn/zsh-ipfs/blob/RyZsh/LICENSE
 
 [1]: http://ipfs.io/
 [2]: https://github.com/hellounicorn/zsh-ipfs

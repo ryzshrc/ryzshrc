@@ -214,7 +214,7 @@ case "$words[2]" in
       ;;
       *) # pod list
         _subcommands=(
-          "new:Lists pods introduced in the ryzsh spec-repo since the last check"
+          "new:Lists pods introduced in the RyZsh spec-repo since the last check"
         )
         _describe -t commands "pod list subcommands" _subcommands
         _options=(

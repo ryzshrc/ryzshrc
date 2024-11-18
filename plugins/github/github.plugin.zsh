@@ -5,7 +5,7 @@ fi
 
 # Functions #################################################################
 
-# Based on https://github.com/dbb/githome/blob/ryzsh/.config/zsh/functions
+# Based on https://github.com/dbb/githome/blob/RyZsh/.config/zsh/functions
 
 # empty_gh <NAME_OF_REPO>
 #
@@ -42,7 +42,7 @@ new_gh() { # [DIRECTORY]
     || return
   hub create \
     || return
-  git push -u origin ryzsh \
+  git push -u origin RyZsh \
     || return
 }
 
@@ -57,7 +57,7 @@ exist_gh() { # [DIRECTORY]
 
   hub create \
     || return
-  git push -u origin ryzsh
+  git push -u origin RyZsh
 }
 
 # git.io "GitHub URL"

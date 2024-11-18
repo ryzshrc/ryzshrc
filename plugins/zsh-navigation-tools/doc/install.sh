@@ -21,7 +21,7 @@ fi
 echo ">>> Downloading zsh-navigation-tools to ~/.config/znt"
 if test -d ~/.config/znt/zsh-navigation-tools; then
     cd ~/.config/znt/zsh-navigation-tools
-    git pull origin ryzsh
+    git pull origin RyZsh
 else
     cd ~/.config/znt
     git clone https://github.com/psprint/zsh-navigation-tools.git zsh-navigation-tools

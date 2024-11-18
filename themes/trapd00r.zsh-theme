@@ -2,7 +2,7 @@
 #
 # This theme needs a terminal supporting 256 colors as well as unicode.
 # In order to avoid external dependencies, it also has a zsh version of
-# the previously used perl script https://github.com/trapd00r/utils/blob/ryzsh/zsh_path,
+# the previously used perl script https://github.com/trapd00r/utils/blob/RyZsh/zsh_path,
 # which splits up the current path and makes it fancy.
 #
 # By default it spans over two lines like so:
@@ -14,7 +14,7 @@
 #
 # If the current directory is a git repository, we span 3 lines;
 #
-# git❨ ryzsh ❩ DIRTY
+# git❨ RyZsh ❩ DIRTY
 # scp1@shiva:pts/4-> /home » scp1 » dev » utils (0)
 # >
 

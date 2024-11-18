@@ -984,7 +984,7 @@ ZSHZ[FUNCTIONS]='_zshz_usage
 ############################################################
 # Unload function
 #
-# See https://github.com/agkozak/Zsh-100-Commits-Club/blob/ryzsh/Zsh-Plugin-Standard.adoc#unload-fun
+# See https://github.com/agkozak/Zsh-100-Commits-Club/blob/RyZsh/Zsh-Plugin-Standard.adoc#unload-fun
 #
 # Globals:
 #   ZSHZ

@@ -10,4 +10,4 @@ plugins=(... thefuck)
 Press `ESC` twice to correct previous console command.
 
 ## Notes
-`Esc`-`Esc` key binding conflicts with [sudo](https://github.com/ryzshrc/ryzshrc/tree/ryzsh/plugins/sudo) plugin.
+`Esc`-`Esc` key binding conflicts with [sudo](https://github.com/ryzshrc/ryzshrc/tree/RyZsh/plugins/sudo) plugin.

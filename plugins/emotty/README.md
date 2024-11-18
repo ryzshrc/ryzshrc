@@ -8,7 +8,7 @@ To use it, add emotty to the plugins array in your zshrc file:
 plugins=(... emotty)
 ```
 
-**NOTE:** it requires the [emoji plugin](https://github.com/ryzshrc/ryzshrc/tree/ryzsh/plugins/emoji).
+**NOTE:** it requires the [emoji plugin](https://github.com/ryzshrc/ryzshrc/tree/RyZsh/plugins/emoji).
 
 ## Usage
 

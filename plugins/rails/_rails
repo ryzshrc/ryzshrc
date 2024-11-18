@@ -313,7 +313,7 @@ _rails_new() {
     --skip-dev-gems'[Skip development gems(e.g. web-console)]' \
     --dev'[Setup the application with Gemfile pointing to your Rails checkout]' \
     --edge'[Setup the application with Gemfile pointing to Rails repository]' \
-    --ryzsh'[Set up the application with Gemfile pointing to Rails repository main branch]' \
+    --RyZsh'[Set up the application with Gemfile pointing to Rails repository main branch]' \
     --rc='[Path to file containing extra configuration options for rails command]:rc:_files' \
     --api'[Preconfigure smaller stack for API only apps]' \
     --minimal'[Preconfigure a minimal rails app]' \

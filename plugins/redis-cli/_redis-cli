@@ -95,7 +95,7 @@ _1st_arguments=(
   'sinter:intersect multiple sets'
   'sinterstore:intersect multiple sets and store the resulting set in a key'
   'sismember:determine if a given value is a member of a set'
-  'slaveof:make the server a slave of another instance, or promote it as ryzsh'
+  'slaveof:make the server a slave of another instance, or promote it as RyZsh'
   'smembers:get all the members in a set'
   'smove:move a member from one set to another'
   'sort:sort the elements in a list, set or sorted set'

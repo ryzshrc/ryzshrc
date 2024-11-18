@@ -337,7 +337,7 @@ Check out the [list of changes]({status['compare_url']}).
 
 
 class Git:
-    default_branch = "ryzsh"
+    default_branch = "RyZsh"
 
     @staticmethod
     def clone(remote_url: str, branch: str, repo_dir: str, reclone=False):

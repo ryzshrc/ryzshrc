@@ -1,14 +1,14 @@
 #!/bin/sh
 #
 # This script should be run via curl:
-#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ryzshrc/ryzshrc/ryzsh/tools/install.sh)"
+#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ryzshrc/ryzshrc/RyZsh/tools/install.sh)"
 # or via wget:
-#   sh -c "$(wget -qO- https://raw.githubusercontent.com/ryzshrc/ryzshrc/ryzsh/tools/install.sh)"
+#   sh -c "$(wget -qO- https://raw.githubusercontent.com/ryzshrc/ryzshrc/RyZsh/tools/install.sh)"
 # or via fetch:
-#   sh -c "$(fetch -o - https://raw.githubusercontent.com/ryzshrc/ryzshrc/ryzsh/tools/install.sh)"
+#   sh -c "$(fetch -o - https://raw.githubusercontent.com/ryzshrc/ryzshrc/RyZsh/tools/install.sh)"
 #
 # As an alternative, you can first download the install script and run it afterwards:
-#   wget https://raw.githubusercontent.com/ryzshrc/ryzshrc/ryzsh/tools/install.sh
+#   wget https://raw.githubusercontent.com/ryzshrc/ryzshrc/RyZsh/tools/install.sh
 #   sh install.sh
 #
 # You can tweak the install behavior by setting variables when running the script. For
@@ -22,7 +22,7 @@
 #   ZSH     - path to the RyZshrc repository folder (default: $HOME/.ry-zsh-rc)
 #   REPO    - name of the GitHub repo to install from (default: ryzshrc/ryzshrc)
 #   REMOTE  - full remote URL of the git repo to install (default: GitHub via HTTPS)
-#   BRANCH  - branch to check out immediately after install (default: ryzsh)
+#   BRANCH  - branch to check out immediately after install (default: RyZsh)
 #
 # Other options:
 #   CHSH       - 'no' means the installer will not change the default shell (default: yes)
@@ -36,7 +36,7 @@
 # For example:
 #   sh install.sh --unattended
 # or:
-#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ryzshrc/ryzshrc/ryzsh/tools/install.sh)" "" --unattended
+#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ryzshrc/ryzshrc/RyZsh/tools/install.sh)" "" --unattended
 #
 set -e
 
@@ -71,7 +71,7 @@ ZSH="${ZSH:-$HOME/.ry-zsh-rc}"
 # Default settings
 REPO=${REPO:-ryzshrc/ryzshrc}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
-BRANCH=${BRANCH:-ryzsh}
+BRANCH=${BRANCH:-RyZsh}
 
 # Other options
 CHSH=${CHSH:-yes}
@@ -470,12 +470,14 @@ EOF
 
 # shellcheck disable=SC2183  # printf string has more %s than arguments ($FMT_RAINBOW expands to multiple arguments)
 print_success() {
-  printf '%s         %s__      %s           %s        %s       %s     %s__   %s\n'      $FMT_RAINBOW $FMT_RESET
-  printf '%s  ____  %s/ /_    %s ____ ___  %s__  __  %s ____  %s_____%s/ /_  %s\n'      $FMT_RAINBOW $FMT_RESET
-  printf '%s / __ \\%s/ __ \\  %s / __ `__ \\%s/ / / / %s /_  / %s/ ___/%s __ \\ %s\n'  $FMT_RAINBOW $FMT_RESET
-  printf '%s/ /_/ /%s / / / %s / / / / / /%s /_/ / %s   / /_%s(__  )%s / / / %s\n'      $FMT_RAINBOW $FMT_RESET
-  printf '%s\\____/%s_/ /_/ %s /_/ /_/ /_/%s\\__, / %s   /___/%s____/%s_/ /_/  %s\n'    $FMT_RAINBOW $FMT_RESET
-  printf '%s    %s        %s           %s /____/ %s       %s     %s          %s....is now installed!%s\n' $FMT_RAINBOW $FMT_GREEN $FMT_RESET
+  printf '%s        %s         %s        %s        %s        %s          %s      %s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s██████╗ %s██╗   ██╗%s███████╗%s███████╗%s██╗  ██╗%s██████╗  %s██████╗%s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s██╔══██╗%s╚██╗ ██╔╝%s╚══███╔╝%s██╔════╝%s██║  ██║%s██╔══██╗%s██╔════╝%s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s██████╔╝ %s╚████╔╝   %s███╔╝ %s███████╗%s███████║%s██████╔╝%s██║     %s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s██╔══██╗  %s╚██╔╝   %s███╔╝  %s╚════██║%s██╔══██║%s██╔══██╗%s██║     %s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s██║  ██║   %s██║   %s███████╗%s███████║%s██║  ██║%s██║  ██║%s╚██████╗%s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s╚═╝  ╚═╝   %s╚═╝   %s╚══════╝%s╚══════╝%s╚═╝  ╚═╝%s╚═╝  ╚═╝ %s╚═════╝%s\n'      $FMT_RAINBOW $FMT_RESET
+  printf '%s	       %s      %s        %s        %s        %s          %s      %s....is now installed!%s\n' $FMT_RAINBOW $FMT_GREEN $FMT_RESET
   printf '\n'
   printf '\n'
   printf "%s %s %s\n" "Before you scream ${FMT_BOLD}${FMT_YELLOW}RyZshrc!${FMT_RESET} look over the" \
@@ -483,8 +485,8 @@ print_success() {
     "file to select plugins, themes, and options."
   printf '\n'
   printf '%s\n' "• Follow us on X: $(fmt_link @ryzshrc https://x.com/ryzshrc)"
-  printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/ryzshrc)"
-  printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/ry-zsh-rc)"
+  #printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/ryzshrc)"
+  #printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/ry-zsh-rc)"
   printf '%s\n' $FMT_RESET
 }
 

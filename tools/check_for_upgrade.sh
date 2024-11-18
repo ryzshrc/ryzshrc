@@ -41,7 +41,7 @@ function current_epoch() {
 
 function is_update_available() {
   local branch
-  branch=${"$(builtin cd -q "$ZSH"; git config --local ry-zsh-rc.branch)":-ryzsh}
+  branch=${"$(builtin cd -q "$ZSH"; git config --local ry-zsh-rc.branch)":-RyZsh}
 
   local remote remote_url remote_repo
   remote=${"$(builtin cd -q "$ZSH"; git config --local ry-zsh-rc.remote)":-origin}

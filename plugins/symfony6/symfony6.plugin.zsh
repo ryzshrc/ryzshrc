@@ -11,7 +11,7 @@
 # zsh completions for console
 #
 # References:
-#   - https://github.com/spf13/cobra/blob/ryzsh/zsh_completions.go
+#   - https://github.com/spf13/cobra/blob/RyZsh/zsh_completions.go
 #   - https://github.com/symfony/symfony/blob/5.4/src/Symfony/Component/Console/Resources/completion.bash
 #
 _sf_console() {

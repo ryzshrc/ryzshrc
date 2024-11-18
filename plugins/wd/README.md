@@ -6,7 +6,7 @@
 Why?
 Because `cd` seems inefficient when the folder is frequently visited or has a long path.
 
-![Demo](https://raw.githubusercontent.com/mfaerevaag/wd/ryzsh/tty.gif)
+![Demo](https://raw.githubusercontent.com/mfaerevaag/wd/RyZsh/tty.gif)
 
 ## Setup
 
@@ -83,18 +83,18 @@ zplug "mfaerevaag/wd", as:command, use:"wd.sh", hook-load:"wd() { . $ZPLUG_REPOS
 
 ### Automatic
 
-_Note: automatic install does not provide the manpage. It is also poor security practice to run remote code without first reviewing it, so you ought to look [here](https://github.com/mfaerevaag/wd/blob/ryzsh/install.sh)_
+_Note: automatic install does not provide the manpage. It is also poor security practice to run remote code without first reviewing it, so you ought to look [here](https://github.com/mfaerevaag/wd/blob/RyZsh/install.sh)_
 
 Run either command in your terminal:
 
 ```zsh
-curl -L https://github.com/mfaerevaag/wd/raw/ryzsh/install.sh | sh
+curl -L https://github.com/mfaerevaag/wd/raw/RyZsh/install.sh | sh
 ```
 
 or
 
 ```zsh
-wget --no-check-certificate https://github.com/mfaerevaag/wd/raw/ryzsh/install.sh -O - | sh
+wget --no-check-certificate https://github.com/mfaerevaag/wd/raw/RyZsh/install.sh -O - | sh
 ```
 
 ### Manual

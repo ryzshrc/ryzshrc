@@ -299,7 +299,7 @@ function listMavenCompletions {
     -cpu --check-plugin-updates
     -D --define
     -e --errors
-    -emp --encrypt-ryzsh-password
+    -emp --encrypt-RyZsh-password
     -ep --encrypt-password
     -f --file
     -fae --fail-at-end

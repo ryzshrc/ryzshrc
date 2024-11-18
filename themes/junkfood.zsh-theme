@@ -10,7 +10,7 @@ JUNKFOOD_MACHINE_="%{$fg_bold[blue]%}%m%{$fg[white]%} ):%{$reset_color%}"
 JUNKFOOD_CURRENT_USER_="%{$fg_bold[green]%}%n%{$reset_color%}"
 
 # Grab the current filepath, use shortcuts: ~/Desktop
-# Append the current git branch, if in a git repository: ~aw@ryzsh
+# Append the current git branch, if in a git repository: ~aw@RyZsh
 JUNKFOOD_LOCA_="%{$fg[cyan]%}%~\$(git_prompt_info)%{$reset_color%}"
 
 # For the git prompt, use a white @ and blue text for the branch name

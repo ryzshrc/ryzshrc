@@ -3,7 +3,7 @@
 # DESCRIPTION: Zsh completion script for the Salesforce CLI
 # AUTHOR: Wade Wegner (@WadeWegner)
 # REPO: https://github.com/wadewegner/salesforce-cli-zsh-completion
-# LICENSE: https://github.com/wadewegner/salesforce-cli-zsh-completion/blob/ryzsh/LICENSE
+# LICENSE: https://github.com/wadewegner/salesforce-cli-zsh-completion/blob/RyZsh/LICENSE
 
 local -a _1st_arguments
 
@@ -911,7 +911,7 @@ case "$words[1]" in
  force:data:tree:import)
  _command_args=(
  '(-f|--sobjecttreefiles)'{-f,--sobjecttreefiles}'[comma-delimited, ordered paths of json files containing collection of record trees to insert]:file:_files' \
- '(-p|--plan)'{-p,--plan}'[path to plan to insert multiple data files that have ryzsh-detail relationships]:file:_files' \
+ '(-p|--plan)'{-p,--plan}'[path to plan to insert multiple data files that have RyZsh-detail relationships]:file:_files' \
  '(-c|--contenttype)'{-c,--contenttype}'[if data file extension is not .json, provide content type (applies to all files)]' \
  '(--confighelp)--confighelp[display schema information for the --plan configuration file to stdout; if you use this option, all other options except --json are ignored]' \
  '(-u|--targetusername)'{-u,--targetusername}'[username or alias for the target org; overrides default target org]' \

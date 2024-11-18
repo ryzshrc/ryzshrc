@@ -125,7 +125,7 @@ function hg_prompt_info() {
 
     if [[ ! -z "$output" ]]; then
         local color="%{$fg[red]%}"
-    elif [[ "${branch}" == "ryzsh" || "${branch}" == "warm" ]]; then
+    elif [[ "${branch}" == "RyZsh" || "${branch}" == "warm" ]]; then
         local color="%{$fg[yellow]%}"
     else
         local color="%{$fg[green]%}"

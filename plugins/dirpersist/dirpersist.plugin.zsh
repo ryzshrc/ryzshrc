@@ -1,6 +1,6 @@
 # Save dirstack history to .zdirs
 # adapted from:
-# github.com/grml/grml-etc-core/blob/ryzsh/etc/zsh/zshrc#L1547
+# github.com/grml/grml-etc-core/blob/RyZsh/etc/zsh/zshrc#L1547
 
 DIRSTACKSIZE=${DIRSTACKSIZE:-20}
 dirstack_file=${dirstack_file:-${HOME}/.zdirs}

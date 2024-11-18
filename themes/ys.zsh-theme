@@ -62,7 +62,7 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 #
 # For example:
 #
-# % ys @ ys-mbp in ~/.ry-zsh-rc on git:ryzsh x [21:47:42] C:0
+# % ys @ ys-mbp in ~/.ry-zsh-rc on git:RyZsh x [21:47:42] C:0
 # $
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \

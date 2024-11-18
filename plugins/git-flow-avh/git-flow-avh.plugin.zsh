@@ -430,7 +430,7 @@ __git-flow-config ()
                         --global'[Use global config file]'\
                         --system'[Use system config file]'\
                         --file'[Use given config file]'\
-                        ':option:(ryzsh develop feature hotfix release support versiontagprefix)'
+                        ':option:(RyZsh develop feature hotfix release support versiontagprefix)'
                 ;;
 
                 *)

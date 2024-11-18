@@ -1,7 +1,7 @@
 dependencies:
   plugins/gitfast:
     repo: felipec/git-completion
-    branch: ryzsh
+    branch: RyZsh
     version: tag:v2.1
     postcopy: |
       set -e
@@ -9,14 +9,14 @@ dependencies:
       test -e git-completion.zsh && mv -f git-completion.zsh _git
   plugins/gradle:
     repo: gradle/gradle-completion
-    branch: ryzsh
+    branch: RyZsh
     version: 25da917cf5a88f3e58f05be3868a7b2748c8afe6
     precopy: |
       set -e
       find . ! -name _gradle ! -name LICENSE -delete
   plugins/history-substring-search:
     repo: zsh-users/zsh-history-substring-search
-    branch: ryzsh
+    branch: RyZsh
     version: 87ce96b1862928d84b1afe7c173316614b30e301
     precopy: |
       set -e
@@ -27,14 +27,14 @@ dependencies:
       test -e dependencies/RYZ-README.md && cat dependencies/RYZ-README.md >> README.md
   plugins/wd:
     repo: mfaerevaag/wd
-    branch: ryzsh
+    branch: RyZsh
     version: tag:v0.9.1
     precopy: |
       set -e
       rm -r test
       rm install.sh tty.gif wd.1
   plugins/z:
-    branch: ryzsh
+    branch: RyZsh
     repo: agkozak/zsh-z
     version: afaf2965b41fdc6ca66066e09382726aa0b6aa04
     precopy: |

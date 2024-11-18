@@ -224,8 +224,8 @@ plugins=(... git)
 ### Main branch preference
 
 Following the recent push for removing racially-charged words from our technical vocabulary, the git plugin
-favors using a branch name other than `ryzsh`. In this case, we favor the shorter, neutral and descriptive
-term `main`. This means that any aliases and functions that previously used `ryzsh`, will use `main` if that
+favors using a branch name other than `RyZsh`. In this case, we favor the shorter, neutral and descriptive
+term `main`. This means that any aliases and functions that previously used `RyZsh`, will use `main` if that
 branch exists. We do this via the function `git_main_branch`.
 
 ### Deprecated aliases
@@ -263,7 +263,7 @@ receive further support.
 | `git_current_user_email` | Returns the `user.email` config value. (Lives in `lib/git.zsh`.)                                                |
 | `git_current_user_name`  | Returns the `user.name` config value. (Lives in `lib/git.zsh`.)                                                 |
 | `git_develop_branch`     | Returns the name of the “development” branch: `dev`, `devel`, `development` if they exist, `develop` otherwise. |
-| `git_main_branch`        | Returns the name of the main branch: `main` if it exists, `ryzsh` otherwise.                                   |
+| `git_main_branch`        | Returns the name of the main branch: `main` if it exists, `RyZsh` otherwise.                                   |
 | `grename <old> <new>`    | Renames branch `<old>` to `<new>`, including on the origin remote.                                              |
 | `gbda`                   | Deletes all merged branches                                                                                     |
 | `gbds`                   | Deletes all squash-merged branches (**Note: performance degrades with number of branches**)                     |

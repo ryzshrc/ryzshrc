@@ -1,5 +1,5 @@
 # prompt style and colors based on Steve Losh's Prose theme:
-# https://github.com/sjl/ry-zsh-rc/blob/ryzsh/themes/prose.zsh-theme
+# https://github.com/sjl/ry-zsh-rc/blob/RyZsh/themes/prose.zsh-theme
 #
 # vcs_info modifications from Bart Trojanowski's zsh prompt:
 # http://www.jukie.net/bart/blog/pimping-out-zsh-prompt

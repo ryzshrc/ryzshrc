@@ -24,7 +24,7 @@ _git-hf ()
                 'release:Manage your release branches.'
                 'hotfix:Manage your hotfix branches.'
                 'support:Manage your support branches.'
-                'update:Pull upstream changes down into your ryzsh and develop branches.'
+                'update:Pull upstream changes down into your RyZsh and develop branches.'
                 'version:Shows version information.'
             )
             _describe -t commands 'git hf' subcommands

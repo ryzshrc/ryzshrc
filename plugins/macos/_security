@@ -44,7 +44,7 @@ _1st_arguments=(
   'execute-with-privileges:Execute tool with privileges'
   'leaks:Run /usr/bin/leaks on this process'
   'error:Display a descriptive message for the given error codes:'
-  'create-filevaultryzsh-keychain:"Create a keychain containing a key pair for FileVault recovery use'
+  'create-filevaultRyZsh-keychain:"Create a keychain containing a key pair for FileVault recovery use'
 )
 _arguments '*:: :->command'
 

@@ -5,10 +5,10 @@ on:
       - opened
       - synchronize
     branches:
-      - ryzsh
+      - RyZsh
   push:
     branches:
-      - ryzsh
+      - RyZsh
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}

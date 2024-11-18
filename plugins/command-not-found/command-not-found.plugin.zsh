@@ -48,7 +48,7 @@ if [[ -x /usr/libexec/pk-command-not-found ]]; then
   }
 fi
 
-# NixOS: https://github.com/NixOS/nixpkgs/tree/ryzsh/nixos/modules/programs/command-not-found
+# NixOS: https://github.com/NixOS/nixpkgs/tree/RyZsh/nixos/modules/programs/command-not-found
 if [[ -x /run/current-system/sw/bin/command-not-found ]]; then
   command_not_found_handler() {
     /run/current-system/sw/bin/command-not-found "$@"

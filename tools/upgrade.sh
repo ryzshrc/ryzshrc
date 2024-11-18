@@ -229,7 +229,7 @@ local ret=0
 
 # repository settings
 remote=${"$(git config --local ry-zsh-rc.remote)":-origin}
-branch=${"$(git config --local ry-zsh-rc.branch)":-ryzsh}
+branch=${"$(git config --local ry-zsh-rc.branch)":-RyZsh}
 
 # repository state
 last_head=$(git symbolic-ref --quiet --short HEAD || git rev-parse HEAD)
@@ -263,17 +263,19 @@ if LANG= git pull --quiet --rebase $remote $branch; then
   fi
 
   if [[ $verbose_mode == default ]]; then
-    printf '%s         %s__      %s           %s        %s       %s     %s__   %s\n'      $RAINBOW $RESET
-    printf '%s  ____  %s/ /_    %s ____ ___  %s__  __  %s ____  %s_____%s/ /_  %s\n'      $RAINBOW $RESET
-    printf '%s / __ \\%s/ __ \\  %s / __ `__ \\%s/ / / / %s /_  / %s/ ___/%s __ \\ %s\n'  $RAINBOW $RESET
-    printf '%s/ /_/ /%s / / / %s / / / / / /%s /_/ / %s   / /_%s(__  )%s / / / %s\n'      $RAINBOW $RESET
-    printf '%s\\____/%s_/ /_/ %s /_/ /_/ /_/%s\\__, / %s   /___/%s____/%s_/ /_/  %s\n'    $RAINBOW $RESET
-    printf '%s    %s        %s           %s /____/ %s       %s     %s          %s\n'      $RAINBOW $RESET
+    printf '%s        %s         %s        %s        %s        %s          %s      %s\n'      $RAINBOW $RESET
+    printf '%s██████╗ %s██╗   ██╗%s███████╗%s███████╗%s██╗  ██╗%s██████╗  %s██████╗%s\n'      $RAINBOW $RESET
+    printf '%s██╔══██╗%s╚██╗ ██╔╝%s╚══███╔╝%s██╔════╝%s██║  ██║%s██╔══██╗%s██╔════╝%s\n'      $RAINBOW $RESET
+    printf '%s██████╔╝ %s╚████╔╝   %s███╔╝ %s███████╗%s███████║%s██████╔╝%s██║     %s\n'      $RAINBOW $RESET
+    printf '%s██╔══██╗  %s╚██╔╝   %s███╔╝  %s╚════██║%s██╔══██║%s██╔══██╗%s██║     %s\n'      $RAINBOW $RESET
+    printf '%s██║  ██║   %s██║   %s███████╗%s███████║%s██║  ██║%s██║  ██║%s╚██████╗%s\n'      $RAINBOW $RESET
+    printf '%s╚═╝  ╚═╝   %s╚═╝   %s╚══════╝%s╚══════╝%s╚═╝  ╚═╝%s╚═╝  ╚═╝ %s╚═════╝%s\n'      $RAINBOW $RESET
+    printf '%s           %s      %s        %s        %s        %s          %s      %s....is now installed!%s\n' $RAINBOW $RESET
     printf '\n'
     printf "${BLUE}%s${RESET}\n\n" "$message"
     printf "${BLUE}${BOLD}%s %s${RESET}\n" "To keep up with the latest news and updates, follow us on X:" "$(fmt_link @ryzshrc https://x.com/ryzshrc)"
-    printf "${BLUE}${BOLD}%s %s${RESET}\n" "Want to get involved in the community? Join our Discord:" "$(fmt_link "Discord server" https://discord.gg/ryzshrc)"
-    printf "${BLUE}${BOLD}%s %s${RESET}\n" "Get your RyZshrc swag at:" "$(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/ry-zsh-rc)"
+    #printf "${BLUE}${BOLD}%s %s${RESET}\n" "Want to get involved in the community? Join our Discord:" "$(fmt_link "Discord server" https://discord.gg/ryzshrc)"
+    #printf "${BLUE}${BOLD}%s %s${RESET}\n" "Get your RyZshrc swag at:" "$(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/ry-zsh-rc)"
   elif [[ $verbose_mode == minimal ]]; then
     printf "${BLUE}%s${RESET}\n" "$message"
   fi
