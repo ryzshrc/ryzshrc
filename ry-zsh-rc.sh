@@ -106,9 +106,22 @@ else
 fi
 
 # Save the location of the current completion dump file.
+# Specify the location of the zcompdump file.
 if [[ -z "$ZSH_COMPDUMP" ]]; then
-  mkdir -p ~/.RyZsh
   ZSH_COMPDUMP="${ZDOTDIR:-$HOME}/.RyZsh/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+fi
+
+# Create a directory if it doesn't exist.
+mkdir -p "${ZDOTDIR:-$HOME}/.RyZsh"
+
+# Reload the zcompdump configuration if necessary.
+if [[ -f "$ZSH_COMPDUMP" ]]; then
+  zcompdump="$ZSH_COMPDUMP"
+  autoload -Uz compinit
+  compinit
+else
+  autoload -Uz compinit
+  compinit -C
 fi
 
 # Construct zcompdump RYZ metadata
