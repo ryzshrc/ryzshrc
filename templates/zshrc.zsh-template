@@ -76,8 +76,9 @@ zsh-history-substring-search
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-completions
-source $ZSH/ry-zsh-rc.sh
 )
+source $ZSH/ry-zsh-rc.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
